@@ -1,0 +1,74 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Open Sans', sans-serif
+.container
+  width: 1140px
+  margin: auto
+button
+  cursor: pointer
+button:active, button:focus
+  outline: none
+input
+  outline: none
+a
+  cursor: pointer
+
+.author
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__avatar
+    margin-right: 12px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+  &__info
+    margin-left: 0
+    margin-right: auto
+  &__name
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+    margin-bottom: 6px
+  &__date
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
+  &__verif
+    display: flex
+    align-items: center
+    font-style: italic
+    font-weight: normal
+    font-size: 14px
+    line-height: 19px
+    color: #5A7184
+    &-icon
+      margin-right: 8px
+      width: 16px
+      height: 16px
+.label
+  padding: 8px 13px
+  background: rgba(54, 179, 126, 0.1)
+  font-style: normal
+  font-weight: 600
+  font-size: 14px
+  line-height: 20px
+  color: #36B37E
+  border-radius: 20px
+  margin-bottom: 16px
+.button
+  padding: 11px 22px
+  background-color: transparent
+  border: 2px solid $ligth
+  border-radius: 8px
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 22px
+  color: $ligth
