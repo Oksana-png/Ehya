@@ -1,0 +1,106 @@
+.last
+  &-article
+    padding-bottom: 96px
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      letter-spacing: 0.2px
+      margin: 0
+      margin-bottom: 16px
+      color: $dark
+      text-transform: capitalize
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: #5A7184
+      margin-bottom: 47px
+      flex-basis: 60%
+    &__button
+      padding: 11px 21px
+      display: flex
+      align-items: center
+      color: $primery
+      border-color: $primery
+      margin-right: 13px
+      margin-top: -16px
+      &-icon
+        margin-left: 11px
+    &__wrapper
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+    &__card
+      text-decoration: none
+.last
+  filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
+  padding: 10px 32px 40px 32px
+  height: 500px
+  width: 360px
+  position: relative
+  border-radius: 16px
+  border: none
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  &::before
+    background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  &-img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: -1
+  &__title
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 28px
+    line-height: 36px
+    letter-spacing: 0.2px
+    margin: 0
+    margin-bottom: 12px
+    color: $ligth
+    z-index: 10
+    overflow: auto
+    text-transform: capitalize
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 25px
+    position: relative
+    z-index: 10
+    color: $ligth
+    margin: 0
+    margin-bottom: 21px
+    overflow-y: auto
+    &_big
+      font-size: 18px
+      line-height: 25px
+  &__author
+    position: relative
+    z-index: 10
+    .author
+      &__name
+        color: $ligth
+        display: inline-block
+        margin-top: -2px
+.visible
+  display: block

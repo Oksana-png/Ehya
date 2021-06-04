@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ehya</title>
+  </head>
+  <body id="body">
+    <div class="hero hero-post">
+      <div class="hero__image"></div>
+      <header class="header hero__header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo logo">
+              <a href="index.html" class="logo__link">
+                <img
+                  src="img/logo.svg"
+                  alt="logo: ehya"
+                  class="header__logo-icon"
+                />
+              </a>
+            </div>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Домой</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Лендинги
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-two">
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Страницы
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-two">
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.1</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.2</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="button header__button post-button">Получить</button>
+            <button class="header__burger">
+              <span class="header__line"></span>
+              <span class="header__line"></span>
+              <span class="header__line"></span>
+            </button>
+          </div>
+          <div class="mobile">
+            <nav class="nav nav--mobile">
+              <ul class="nav__list nav__list--mobile">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Домой</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Лендинги</a>
+                  <a href="#" class="nav__link-arrow">
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-mobile">
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Страницы</a>
+                  <a href="#" class="nav__link-arrow">
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-mobile">
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="button header__button header__button--mobile">
+              Получить
+            </button>
+          </div>
+          <h1 class="hero-post__title">
+            Дешевые авиабилеты&nbsp;- отличный способ сэкономить
+          </h1>
+        </div>
+      </header>
+    </div>
+    <div class="container post-cont">
+      <section class="post">
+        <div class="container-post">
+          <div class="container-post__wrapper">
+            <p class="text">
+              Посещение выставки может быть очень эффективным методом
+              продвижения вашей компании и ее продукции. И один из наиболее
+              эффективных способов оптимизировать показ вашей выставки и
+              увеличить посещаемость вашего стенда - это использование баннерных
+              стендов.
+            </p>
+            <div class="post__author author">
+              <a href="#" class="author__avatar">
+                <img
+                  src="img/avatar-1.jpg"
+                  alt="Viola Manisa"
+                  class="author__avatar-icon"
+                />
+              </a>
+              <div class="author__info">
+                <a href="#" class="author__link">
+                  <span class="author__name">Viola Manisa</span>
+                </a>
+                <div class="author__verif">
+                  <img
+                    src="img/icon/ok.svg"
+                    alt="icon"
+                    class="author__verif-icon"
+                  />
+                  Verified writer
+                </div>
+              </div>
+              <div class="author__date">
+                <span class="author-visible">PUBLISHED ON </span>MAY, 2 2019
+              </div>
+            </div>
+            <!-- /.author -->
+            <figure class="post__image">
+              <img
+                src="img/post/post-image.jpg"
+                alt="street"
+                class="post__img"
+              />
+              <figcaption class="post__description">
+                This is a caption on this photo for reference
+              </figcaption>
+            </figure>
+            <h2 class="post__title post__title_min">
+              Microsoft Patch Management для домашних пользователей
+            </h2>
+            <p class="post__text post__text_one">
+              В прошлом месяце моя жена Энн Доу отвезла меня в Лас-Вегас, потому
+              что ей нужно было ехать на деловой съезд. Излишне говорить, что
+              она пишет путеводитель по казино, а я ненавижу азартные игры. Но
+              ей это нравится, и это тоже поддерживает нас, так что я пошел без
+              проблем. Сначала я был подавлен, но потом, поспрашивая и
+              оглядываясь, я обнаружил, что в Лас-Вегасе повеселился больше, чем
+              я мог подумать. И нет. Пока я был там, я не заходил ни в одно
+              казино.
+            </p>
+            <h3 class="post__subtitle post__subtitle_line">
+              Развлекательная программа
+            </h3>
+            <p class="post__text post__text_two">
+              Одно из главных достоинств Лас-Вегаса, Рино и Атлантик-Сити (но
+              особенно Лас-Вегаса) - это количество доступных шоу. Вы можете
+              увидеть таких комиков высшего класса, как Джей Лено, Джерри
+              Сайнфелд, Рэй Романо, Тим Аллен и даже таких, как Билл Косби и
+              Крис Рок. Если вы увлекаетесь музыкой, вы можете посмотреть на
+              певиц, таких как Селин Дион, Мэрайя Кэри, Бритни Спирс, Кристина
+              Агилера и Бейонк?, Исполнителей&nbsp;-&nbsp;мужчин,&nbsp;таких как
+              Фил Коллинз, Эрик Клэптон, Snoopy Dog, и таких групп, как Oasis и
+              Bon Jovi. Я мог бы продолжать и продолжать, но список бесконечен.
+              Если вы увлекаетесь магией, вы можете наблюдать, как фокусники,
+              такие как Дэвид Копперфилд, делают свои дела в нескольких метрах
+              от вас. Все, что вам нравится, вы можете найти здесь: от западной
+              музыки до старинных песен и джаза, рока, от Heavy Mettle до
+              транса. Все, что вам нужно сделать, это посмотреть на маршрут,
+              предлагаемый во время вашего визита.
+            </p>
+            <h3 class="post__subtitle post__subtitle_one">Еда</h3>
+            <p class="post__text post__text_letter">
+              С китайского на японский, с корейского на еврейский, и даже с
+              вегетарианскими и настоящими мясными заведениями, которые ждут
+              каждого вашего удовольствия в Вегасе. Не выбирайте дешевые и
+              жареные в масле блюда, которые подают бесплатно во время игры.
+              Остановитесь на время и насладитесь восхитительными пейзажами и
+              запахами восточноазиатских или европейских блюд. Что удивительно,
+              так это то, что вы видите способность человека смешиваться.
+              Настоящий плавильный котел, если можно так сказать.
+            </p>
+
+            <div class="post-slider">
+              <div class="post-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <figure class="post__image">
+                      <img
+                        src="img/post/post-slide-1.jpg"
+                        alt="street"
+                        class="post__img"
+                      />
+                      <figcaption class="post__description">
+                        This is a caption on this photo for reference
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="post__image">
+                      <img
+                        src="img/post/slider-post-1.jpeg"
+                        alt="street"
+                        class="post__img"
+                      />
+                      <figcaption class="post__description">
+                        This is a caption on this photo for reference
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="post__image">
+                      <img
+                        src="img/post/slider-post-2.jpg"
+                        alt="mountains"
+                        class="post__img"
+                      />
+                      <figcaption class="post__description">
+                        This is a caption on this photo for reference
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="examples-button-prev examples-button post-button-prev"
+              ></div>
+              <div class="examples-button-next examples-button"></div>
+            </div>
+            <!-- /.post-slider -->
+            <h2 class="post__title post__title_slider">
+              Достопримечательности, которые вы должны увидеть во время своего
+              визита в Вегас:
+            </h2>
+            <p class="post__text post__text_vegas">
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой
+              из множества доступных обзорных экскурсий и посмотрите
+              архитектурное чудо - плотину Гувера, построенную над Большим
+              каньоном, которая также является грандиозным зрелищем, которое
+              стоит увидеть отдельно. Черный каньон - еще одно место, которое
+              нужно увидеть,<br />как и озеро Мид, которое так красиво только
+              потому, что это водоем, окруженный пустынной природой. Река
+              Колорадо:
+              <br />
+              Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту
+              реки, нужно спуститься вниз. Река Колорадо отлично подходит для
+              рафтинга и водных видов спорта, но вам не обязательно принимать
+              участие, если это не для вас.
+            </p>
+            <h3 class="post__subtitle post__subtitle_two">Bonnie Springs</h3>
+            <p class="post__text post__text_vegas-p post__text_vegas-par">
+              Кто не может устоять перед поездкой в ​​один из старых городов,
+              подобных тем, что в западных фильмах о стрельбе из оружия? Вашим
+              пунктом назначения должна быть Старая Невада. Там вы сможете
+              насладиться старым западным городом прямо посреди каньона Ред-Рок.
+              Они тоже проводят западные буллиты, так что будьте готовы,
+              партнер! Я мог бы продолжать и рассказывать о других
+              достопримечательностях, таких как тематический парк в Circus
+              Circus, природный заповедник Гилкриз, заповедник для наблюдения за
+              птицами Хендерсон и Mt. Чарльстон, но я думаю, вы поняли.
+            </p>
+          </div>
+        </div>
+        <div class="container-quote">
+          <div class="quote post__quote">
+            <img src="img/post/quote-left.svg" alt="quote" class="quote__img" />
+            <h3 class="quote__text">
+              Многие&nbsp;люди&nbsp;сказали бы, что это абсолютное безумие
+              продолжать делать одно и то же, раз за разом, ожидая получить
+              другой результат или что-то другое случится.
+            </h3>
+            <p class="quote__description">
+              Даниэль принимает гостей в Джокьякарте, чтобы заработать
+              дополнительные деньги
+            </p>
+            <img
+              src="img/post/post-avatar.jpg"
+              alt="piple"
+              class="quote__avatar"
+            />
+            <img src="img/post/oval.svg" alt="oval: decor" class="oval" />
+            <img
+              src="img/post/oval-small.svg"
+              alt="oval: decor"
+              class="oval-small"
+            />
+          </div>
+        </div>
+        <div class="container-post">
+          <div class="container-post__wrapper">
+            <div class="post__text post__text_vegas-p">
+              Плотина Гувера и Большой каньон: забронируйте себе место в любой
+              из множества доступных обзорных экскурсий и посмотрите
+              архитектурное чудо - плотину Гувера, построенную над Большим
+              каньоном, которая также является грандиозным зрелищем, которое
+              стоит увидеть отдельно. Черный каньон - еще одно место, которое
+              нужно увидеть,<br />как и озеро Мид, которое так красиво только
+              потому, что это водоем, окруженный пустынной природой. Река
+              Колорадо:
+              <br />
+              Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту
+              реки, нужно спуститься вниз. Река Колорадо отлично подходит для
+              рафтинга и водных видов спорта, но вам не обязательно принимать
+              участие, если это не для вас.
+            </div>
+            <div class="post__gallery">
+              <img
+                src="img/post/img-1.jpg"
+                alt="image"
+                class="post__gallery-img"
+              />
+              <div class="post__group">
+                <img
+                  src="img/post/img-2.jpg"
+                  alt="image"
+                  class="post__gallery-small"
+                />
+                <img
+                  src="img/post/img-3.jpg"
+                  alt="image"
+                  class="post__gallery-small"
+                />
+              </div>
+            </div>
+            <span class="post__description post__description-gallery"
+              >This is a caption on this photo for reference</span
+            >
+            <h3 class="post__subtitle post__subtitle_thee">Bonnie Springs</h3>
+            <p class="post__text post__text_vegas-pa">
+              Кто не может устоять перед поездкой в ​​один из старых городов,
+              подобных тем, что в западных фильмах о стрельбе из оружия? Вашим
+              пунктом назначения должна быть Старая Невада. Там вы сможете
+              насладиться старым западным городом прямо посреди каньона Ред-Рок.
+              Они тоже проводят западные буллиты, так что будьте готовы,
+              партнер! Я мог бы продолжать и рассказывать о других
+              достопримечательностях, таких как тематический парк в Circus
+              Circus, природный заповедник Гилкриз, заповедник для наблюдения за
+              птицами Хендерсон и Mt. Чарльстон, но я думаю, вы поняли.
+            </p>
+            <div class="social">
+              <span class="social__text">Share</span>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    href="https://twitter.com"
+                    class="social__link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                  >
+                    <img src="img/icon/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="https://ru-ru.facebook.com"
+                    class="social__link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                  >
+                    <img src="img/icon/facebook-f.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="https://www.linkedin.cn/"
+                    class="social__link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                  >
+                    <img src="img/icon/linkedin.svg" alt="linkedin" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="social__link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                  >
+                    <img src="img/icon/instagram.svg" alt="instagram" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="post__author-wrap">
+              <div class="author">
+                <a href="#" class="author__avatar">
+                  <img
+                    src="img/avatar-1.jpg"
+                    alt="Viola Manisa"
+                    class="author__avatar-icon"
+                  />
+                </a>
+                <div class="author__info">
+                  <a href="#" class="author__link">
+                    <span class="author__name">Viola Manisa</span>
+                  </a>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">
+                  <span class="author-visible">PUBLISHED ON </span> MAY, 2 2019
+                </div>
+              </div>
+            </div>
+            <div class="post-comment">
+              <h3 class="post-comment__title">Комментарии</h3>
+              <div class="post-comment__wrap">
+                <div class="post-author post-author--group author">
+                  <a href="#" class="author__avatar">
+                    <img
+                      src="img/post/avatar-6.jpg"
+                      alt="Alexis Ren"
+                      class="author__avatar-icon"
+                    />
+                  </a>
+                  <div class="author__info">
+                    <a href="#" class="author__link">
+                      <span class="author__name">Alexis Ren</span>
+                    </a>
+                    <div class="author__verif">02 May</div>
+                  </div>
+                </div>
+                <div class="post-comment__text">
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel met
+                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                  vulputate at, tempus viverra turpis.
+                </div>
+              </div>
+              <div class="post-comment__wrap">
+                <div class="post-author post-author--group author">
+                  <a href="#" class="author__avatar">
+                    <img
+                      src="img/post/avatar-7.jpg"
+                      alt="Elsie Scott"
+                      class="author__avatar-icon"
+                    />
+                  </a>
+                  <div class="author__info">
+                    <a href="#" class="author__link">
+                      <span class="author__name">Elsie Scott</span>
+                    </a>
+                    <div class="author__verif">02 May</div>
+                  </div>
+                </div>
+                <div class="post-comment__text">
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin.
+                </div>
+              </div>
+              <form action="#" class="post-comment__form">
+                <input
+                  type="text"
+                  class="post-comment__input"
+                  placeholder="Написать комментарий..."
+                />
+                <img
+                  src="img/post/avatar-7.jpg"
+                  alt="Elsie Scott"
+                  class="post-comment__avatar"
+                />
+                <button class="post-comment__button">Комментировать</button>
+              </form>
+            </div>
+          </div>
+          <!-- /.container-post__wrapper -->
+        </div>
+        <!-- /.container-post -->
+      </section>
+    </div>
+    <img src="img/wave-dark.svg" alt="decor" class="connect-img post-bc" />
+    <section class="connect connect--wrap">
+      <div class="container">
+        <div class="connect__wrapper connect__post">
+          <div class="connect__info">
+            <h2 class="connect__title connect__post-title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h2>
+            <form
+              action="send.php"
+              method="POST"
+              class="connect__form connect__post-form"
+            >
+              <div class="connect__group">
+                <input
+                  type="email"
+                  class="connect__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <button class="connect__button connect__post-button">
+                Начать
+              </button>
+            </form>
+            <p class="connect__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <!-- /. connect__info -->
+          <div class="connect__card-wrap connect__post-wrap">
+            <img
+              src="img/icon/cube-light.svg"
+              alt="cube-ligth"
+              class="cube-ligth"
+            />
+            <img
+              src="img/icon/cube-dark.svg"
+              alt="cube-dark"
+              class="cube-dark"
+            />
+            <div class="connect__card">
+              <img src="img/joistic.jpg" alt="joystick" class="connect__img" />
+              <h3 class="connect__card-title">Лучшие статьи каждую неделю</h3>
+              <p class="connect__card-text">
+                Наши предложения по страхованию везде&nbsp;одинаковы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <span class="line"></span>
+        <div class="footer__wrapper footer__post-wrapper">
+          <div class="footer__info info footer__blocks">
+            <a href="index.html" class="post-logo-link">
+              <img src="img/logo.svg" alt="logo: ehya" class="post-logo" />
+            </a>
+            <div class="info__description">
+              Создайте современный и<br class="hidden" />
+              креативный веб-сайт с crealand
+            </div>
+            <div class="info__description info__description_visible">
+              Создайте&nbsp;современный&nbsp;и&nbsp;креативный веб-сайт с
+              crealand
+            </div>
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.google.ru/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/google.svg" alt="icon: google"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://twitter.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/twitter.svg" alt="icon: twitter"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/instagram.svg" alt="icon: instagram"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.linkedin.cn/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/linkedin.svg" alt="icon: linkedin"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.youtube.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/youtube.svg" alt="icon: youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__product footer__blocks">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Лендинг</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Функции</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Скидки</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Расценки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__product -->
+          <div class="footer__service footer__blocks">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Дизайн</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Темы</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Иллюстрации</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >UI Kit</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__service -->
+          <div class="footer__compani footer__blocks">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >О нас</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Условия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__compani -->
+          <div class="footer__more footer__blocks">
+            <h3 class="footer__title">Более</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Лицензия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Измененния</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__compani -->
+        </div>
+        <div class="copirigth copirigth--post">
+          <div class="copirigth__heart">
+            <img src="img/icon/heart.svg" alt="heart" class="copirigth-icon" />
+          </div>
+          <div class="copirigth__text">
+            Copyright © 2019. Crafted with love.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#body" class="up scroll-link"></a>
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="dialog">
+        <form action="send.php" method="POST" class="modal__form">
+          <img src="img/icon/close.svg" alt="cross" class="cross" />
+          <h3 class="modal__title">Обратная связь</h3>
+          <div class="modal__group">
+            <input
+              type="text"
+              class="modal__input"
+              minlength="2"
+              placeholder="Ваше имя*"
+              required
+              name="name"
+            />
+          </div>
+          <div class="modal__group">
+            <input
+              type="tel"
+              class="modal__input modal__input_tel"
+              minlength="18"
+              placeholder="Номер телефона*"
+              required
+              name="phone"
+            />
+          </div>
+          <button type="submit" class="button modal__button">Получить</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

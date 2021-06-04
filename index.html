@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ehya</title>
   </head>
-  <body>
+  <body id="body">
     <div class="hero">
       <div class="hero__image"></div>
       <header class="header hero__header">
@@ -30,23 +33,49 @@
             <nav class="nav header__nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Домой</a>
+                  <a href="index.html" class="nav__link">Домой</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Лендинги</a
-                  ><img
-                    class="nav__arrow"
-                    src="img/arrow-down.svg"
-                    alt="arrow down"
-                  />
+                  <a href="#" class="nav__link"
+                    >Лендинги
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-two">
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 3</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Страницы</a
-                  ><img
-                    class="nav__arrow"
-                    src="img/arrow-down.svg"
-                    alt="arrow down"
-                  />
+                  <a href="#" class="nav__link"
+                    >Страницы
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-two">
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.1</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.2</a>
+                    </li>
+                    <li class="nav__item-two">
+                      <a href="#" class="nav__link-two">Пункт 2.3</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav__item">
                   <a href="#" class="nav__link">Помощь</a>
@@ -54,10 +83,68 @@
               </ul>
             </nav>
             <button class="button header__button">Получить</button>
+            <!-- МОДАЛЬНОЕ ОКНО ОТКРЫВАЕТ -->
             <button class="header__burger">
               <span class="header__line"></span>
               <span class="header__line"></span>
               <span class="header__line"></span>
+            </button>
+          </div>
+          <div class="mobile">
+            <nav class="nav nav--mobile">
+              <ul class="nav__list nav__list--mobile">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Домой</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Лендинги</a>
+                  <a href="#" class="nav__link-arrow">
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-mobile">
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Страницы</a>
+                  <a href="#" class="nav__link-arrow">
+                    <img
+                      class="nav__arrow"
+                      src="img/arrow-down.svg"
+                      alt="arrow down"
+                    />
+                  </a>
+                  <ul class="nav__list-mobile">
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 1</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 2</a>
+                    </li>
+                    <li class="nav__item-mobile">
+                      <a href="#" class="nav__link-mobile">Пункт 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="button header__button header__button--mobile">
+              Получить
             </button>
           </div>
         </div>
@@ -70,14 +157,20 @@
             alt="icon: search"
             class="search__icon"
           />
-          <input type="text" class="search__input" placeholder="Поиск постов" />
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Поиск постов"
+            required
+            name="searchPost"
+          />
           <button class="search__button" type="submit">Поиск</button>
         </form>
         <div class="tags">
           <span class="tags__text">Популярные Тэги :</span>
-          <a href="#" class="tags__item">Design</a>
-          <a href="#" class="tags__item">User Experience</a>
-          <a href="#" class="tags__item">User Interfaces</a>
+          <a href="post.html" class="tags__item">Design</a>
+          <a href="post.html" class="tags__item">User Experience</a>
+          <a href="post.html" class="tags__item">User Interfaces</a>
         </div>
       </div>
     </div>
@@ -86,22 +179,28 @@
         <div class="offer__wrapper">
           <img src="img/offer.jpg" alt="offer" class="offer-image" />
           <div class="offer__info">
-            <div class="label offer__hot">Предложения</div>
-            <h2 class="offer__title">
-              Дешевые Авиабилеты - Отличный Способ Сэкономить
-            </h2>
-            <p class="offer__text">
-              В этом цифровом поколении, где информацию можно&nbsp;легко
-              получить за секунды, визитки ...
-            </p>
+            <a href="post.html" class="label offer__hot">Предложения</a>
+            <a href="post.html" class="offer__link-text">
+              <h2 class="offer__title">
+                Дешевые Авиабилеты - Отличный Способ Сэкономить
+              </h2>
+              <p class="offer__text">
+                В этом цифровом поколении, где информацию можно&nbsp;легко
+                получить за секунды, визитки ...
+              </p>
+            </a>
             <div class="offer__author author">
-              <img
-                src="img/avatar-1.png"
-                alt="Viola Manisa"
-                class="author__avatar"
-              />
+              <a href="#" class="author__avatar">
+                <img
+                  src="img/avatar-1.jpg"
+                  alt="Viola Manisa"
+                  class="author__avatar-icon"
+                />
+              </a>
               <div class="author__info">
-                <span class="author__name">Viola Manisa</span>
+                <a href="#" class="author__link">
+                  <span class="author__name">Viola Manisa</span></a
+                >
                 <div class="author__verif">
                   <img
                     src="img/icon/ok.svg"
@@ -125,28 +224,32 @@
             Мы делимся общими тенденциями, стратегическими идеями, мнениями,
             короткими и длинными историями команды, стоящей за компанией.
           </div>
-          <button class="button popular__button">
+          <a href="post.html" class="button popular__button">
             <span class="popular__button-text">Смотреть все</span>
             <img
               src="img/icon/arrow.svg"
               alt="arrow"
               class="popular__button-icon"
             />
-          </button>
-          <div class="articles">
+          </a>
+          <a href="post.html" class="articles">
             <img src="img/articles-1.jpg" alt="family" class="articles-img" />
             <div class="articles__label">ПРЕДЛОЖЕНИЯ</div>
             <h3 class="articles__title">
               Как защитить свою семью от угарного газа
             </h3>
             <div class="articles__author author">
-              <img
-                src="img/avatar-1.png"
-                alt="Viola Manisa"
-                class="author__avatar"
-              />
+              <div class="author__avatar">
+                <img
+                  src="img/avatar-1.jpg"
+                  alt="Viola Manisa"
+                  class="author__avatar-icon"
+                />
+              </div>
               <div class="author__info">
-                <span class="author__name">Viola Manisa</span>
+                <div class="author__link">
+                  <span class="author__name">Viola Manisa</span>
+                </div>
                 <div class="author__verif">
                   <img
                     src="img/icon/ok.svg"
@@ -159,21 +262,25 @@
               <div class="author__date">02 May</div>
             </div>
             <!-- /.author -->
-          </div>
-          <div class="articles">
+          </a>
+          <a href="post.html" class="articles">
             <img src="img/articles-2.jpg" alt="family" class="articles-img" />
             <div class="articles__label">ПРЕДЛОЖЕНИЯ</div>
             <h3 class="articles__title articles__title_two">
               Материнство - самая трудная и лучшая работа на свете
             </h3>
             <div class="articles__author author">
-              <img
-                src="img/avatar-2.png"
-                alt="Joshua William"
-                class="author__avatar"
-              />
+              <div class="author__avatar">
+                <img
+                  src="img/avatar-2.jpg"
+                  alt="Joshua William"
+                  class="author__avatar-icon"
+                />
+              </div>
               <div class="author__info">
-                <span class="author__name">Joshua William</span>
+                <div class="author__link">
+                  <span class="author__name">Joshua William</span>
+                </div>
                 <div class="author__verif">
                   <img
                     src="img/icon/ok.svg"
@@ -186,11 +293,836 @@
               <div class="author__date">02 May</div>
             </div>
             <!-- /.author -->
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-article">
+      <div class="container">
+        <h2 class="last-article__title">Последние статьи</h2>
+        <div class="last-article__wrapper">
+          <div class="last-article__text">
+            Вот чем мы занимались в последнее время.
+          </div>
+          <a href="post.html" class="button last-article__button">
+            <span class="last-article__button-text">Смотреть все</span>
+            <img
+              src="img/icon/arrow.svg"
+              alt="arrow"
+              class="last-article__button-icon"
+            />
+          </a>
+          <a href="post.html" class="last last-article__card">
+            <img src="img/last-card-1.jpg" alt="computer" class="last-img" />
+            <h3 class="last__title">Будущее работы</h3>
+            <p class="last__description">
+              Большинство людей будут работать на рабочих местах, которых
+              сегодня не существует.
+            </p>
+            <div class="last__author author">
+              <div class="author__avatar">
+                <img
+                  src="img/avatar-3.jpg"
+                  alt="Lina Hicks"
+                  class="author__avatar-icon"
+                />
+              </div>
+              <div class="author__info">
+                <div class="author__link">
+                  <span class="author__name">Lina Hicks</span>
+                </div>
+                <div class="author__verif">
+                  <img
+                    src="img/icon/ok.svg"
+                    alt="icon"
+                    class="author__verif-icon"
+                  />
+                  Verified writer
+                </div>
+              </div>
+              <div class="author__date">02 May</div>
+            </div>
+            <!-- /.author -->
+          </a>
+          <!-- /.last card -->
+          <a href="post.html" class="last last-article__card">
+            <img src="img/last-card-2.jpg" alt="phone" class="last-img" />
+            <h3 class="last__title">Будущее данных</h3>
+            <p class="last__description last__description_big">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="last__author author">
+              <div class="author__avatar">
+                <img
+                  src="img/avatar-4.jpg"
+                  alt="Tyler Murray"
+                  class="author__avatar-icon"
+                />
+              </div>
+              <div class="author__info">
+                <div class="author__link">
+                  <span class="author__name">Tyler Murray</span>
+                </div>
+                <div class="author__verif">
+                  <img
+                    src="img/icon/ok.svg"
+                    alt="icon"
+                    class="author__verif-icon"
+                  />
+                  Verified writer
+                </div>
+              </div>
+              <div class="author__date">02 May</div>
+            </div>
+            <!-- /.author -->
+          </a>
+          <!-- /.last card -->
+          <a href="post.html" class="last last-article__card">
+            <img
+              src="img/last-card-3.jpg"
+              alt="artificial intelligence"
+              class="last-img"
+            />
+            <h3 class="last__title">Будущее обучения</h3>
+            <p class="last__description last__description_big">
+              Постоянная способность учиться будет на самых важных
+              <br class="visible" />навыках.
+            </p>
+            <div class="last__author author">
+              <div class="author__avatar">
+                <img
+                  src="img/avatar-5.jpg"
+                  alt="Warren Casey"
+                  class="author__avatar-icon"
+                />
+              </div>
+              <div class="author__info">
+                <div class="author__link">
+                  <span class="author__name">Warren Casey</span>
+                </div>
+                <div class="author__verif">
+                  <img
+                    src="img/icon/ok.svg"
+                    alt="icon"
+                    class="author__verif-icon"
+                  />
+                  Verified writer
+                </div>
+              </div>
+              <div class="author__date">02 May</div>
+            </div>
+            <!-- /.author -->
+          </a>
+          <!-- /.last card -->
+        </div>
+      </div>
+    </section>
+    <section class="examples">
+      <div class="container">
+        <h2 class="examples__title">Примеры из практики</h2>
+        <div class="examples__wrapper">
+          <div class="examples__text">
+            Вот чем мы занимались в последнее время.
+          </div>
+          <a href="post.html" class="button examples__button">
+            <span class="examples__button-text">Смотреть все</span>
+            <img
+              src="img/icon/arrow.svg"
+              alt="arrow"
+              class="examples__button-icon"
+            />
+          </a>
+          <div class="examples-s">
+            <div class="examples-container">
+              <div class="swiper-wrapper examples-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="examples-slide">
+                    <img
+                      src="img/slider-img.jpg"
+                      alt="city"
+                      class="examples-img"
+                    />
+                    <div class="examples__info">
+                      <a href="post.html" class="label examples__label"
+                        >Предложения</a
+                      >
+                      <a href="post.html" class="examples-slide__txt">
+                        <h2 class="examples-slide__title">
+                          Дешевые Авиабилеты - Отличный Способ Сэкономить
+                        </h2>
+                        <p class="examples-slide__text">
+                          В этом цифровом поколении, где информацию
+                          можно&nbsp;легко получить за секунды, визитки ...
+                        </p>
+                      </a>
+                      <div class="examples__author author">
+                        <a href="#">
+                          <img
+                            src="img/avatar-1.jpg"
+                            alt="Viola Manisa"
+                            class="author__avatar"
+                          />
+                        </a>
+                        <div class="author__info">
+                          <a href="#" class="author__link">
+                            <span class="author__name">Viola Manisa</span></a
+                          >
+                          <div class="author__verif">
+                            <img
+                              src="img/icon/ok.svg"
+                              alt="icon"
+                              class="author__verif-icon"
+                            />
+                            Verified writer
+                          </div>
+                        </div>
+                        <div class="author__date">02 May</div>
+                      </div>
+                      <!-- /.offer__author  -->
+                    </div>
+                    <!-- /.offer__info  -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="examples-slide">
+                    <div class="examples-img">
+                      <img
+                        src="img/slider-2.jpg"
+                        alt="city"
+                        class="examples__image"
+                      />
+                    </div>
+                    <div class="examples__info">
+                      <a href="post.html" class="label examples__label"
+                        >Выгодно</a
+                      >
+                      <a href="post.html" class="examples-slide__txt">
+                        <h2 class="examples-slide__title">
+                          Спорт - вот что поможет всему миру
+                        </h2>
+                        <p class="examples-slide__text">
+                          О мировых рекордах, интересных методиках, полезных
+                          упражнений и не только...
+                        </p>
+                      </a>
+                      <div class="examples__author author">
+                        <a href="#">
+                          <img
+                            src="img/avatar-5.jpg"
+                            alt="Warren Casey"
+                            class="author__avatar"
+                          />
+                        </a>
+                        <div class="author__info">
+                          <a href="#" class="author__link">
+                            <span class="author__name">Warren Casey</span></a
+                          >
+                          <div class="author__verif">
+                            <img
+                              src="img/icon/ok.svg"
+                              alt="icon"
+                              class="author__verif-icon"
+                            />
+                            Verified writer
+                          </div>
+                        </div>
+                        <div class="author__date">08 May</div>
+                      </div>
+                      <!-- /.offer__author  -->
+                    </div>
+                    <!-- /.offer__info  -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="examples-slide">
+                    <div class="examples-img">
+                      <img
+                        src="img/post/post-image.jpg"
+                        alt="city"
+                        class="examples__image"
+                      />
+                    </div>
+                    <div class="examples__info">
+                      <a href="post.html" class="label examples__label"
+                        >Новости</a
+                      >
+                      <a href="post.html" class="examples-slide__txt">
+                        <h2 class="examples-slide__title">
+                          Microsoft Patch Management
+                        </h2>
+                        <p class="examples-slide__text">
+                          В прошлом месяце моя жена Энн Доу отвезла меня в
+                          Лас-Вегас, потому что ей нужно было ехать на деловой
+                          съезд...
+                        </p>
+                      </a>
+                      <div class="examples__author author">
+                        <a href="#">
+                          <img
+                            src="img/avatar-5.jpg"
+                            alt="Warren Casey"
+                            class="author__avatar"
+                          />
+                        </a>
+                        <div class="author__info">
+                          <a href="#" class="author__link">
+                            <span class="author__name">Warren Casey</span></a
+                          >
+                          <div class="author__verif">
+                            <img
+                              src="img/icon/ok.svg"
+                              alt="icon"
+                              class="author__verif-icon"
+                            />
+                            Verified writer
+                          </div>
+                        </div>
+                        <div class="author__date">19 May</div>
+                      </div>
+                      <!-- /.offer__author  -->
+                    </div>
+                    <!-- /.offer__info  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="examples-button-prev examples-button"></button>
+            <button class="examples-button-next examples-button"></button>
           </div>
         </div>
       </div>
     </section>
+    <section class="all">
+      <div class="container">
+        <h2 class="all__title">Все статьи</h2>
+        <p class="all__text">
+          Мы делимся общими тенденциями, стратегическими идеями,
+          <br class="all-up" />
+          мнениями, короткими и длинными историями команды, стоящей за
+          компанией.
+        </p>
+        <div class="all__cards">
+          <div class="all__wrapper-small">
+            <a href="post.html" class="articles">
+              <img src="img/all-card-1.jpg" alt="family" class="articles-img" />
+              <div class="articles__label">ПРЕДЛОЖЕНИЯ</div>
+              <h3 class="articles__title">
+                Как защитить свою семью от угарного газа
+              </h3>
+              <div class="articles__author author">
+                <div class="author__avatar">
+                  <img
+                    src="img/avatar-1.jpg"
+                    alt="Viola Manisa"
+                    class="author__avatar-icon"
+                  />
+                </div>
+                <div class="author__info">
+                  <div class="author__link">
+                    <span class="author__name">Viola Manisa</span>
+                  </div>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">02 May</div>
+              </div>
+              <!-- /.author -->
+            </a>
+            <a href="post.html" class="articles">
+              <img src="img/all-card-2.jpg" alt="family" class="articles-img" />
+              <div class="articles__label">ПРЕДЛОЖЕНИЯ</div>
+              <h3 class="articles__title articles__title_two">
+                Материнство - самая трудная и лучшая работа на свете
+              </h3>
+              <div class="articles__author author">
+                <div class="author__avatar">
+                  <img
+                    src="img/avatar-2.jpg"
+                    alt="Joshua William"
+                    class="author__avatar-icon"
+                  />
+                </div>
+                <div class="author__info">
+                  <div class="author__link">
+                    <span class="author__name">Joshua William</span>
+                  </div>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">02 May</div>
+              </div>
+              <!-- /.author -->
+            </a>
+          </div>
+          <!-- /.all__wrapper-small -->
+          <div class="all__wrapper-big">
+            <a href="post.html" class="last all__card">
+              <img src="img/all-card-3.jpg" alt="computer" class="last-img" />
+              <h3 class="last__title">Будущее работы</h3>
+              <p class="last__description">
+                Большинство людей будут работать на рабочих местах, которых
+                сегодня не существует.
+              </p>
+              <div class="last__author author">
+                <div class="author__avatar">
+                  <img
+                    src="img/avatar-3.jpg"
+                    alt="Lina Hicks"
+                    class="author__avatar-icon"
+                  />
+                </div>
+                <div class="author__info">
+                  <div class="author__link">
+                    <span class="author__name">Lina Hicks</span>
+                  </div>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">02 May</div>
+              </div>
+              <!-- /.author -->
+            </a>
+            <!-- /.last card -->
+            <a href="post.html" class="last all__card">
+              <img src="img/all-card-4.jpg" alt="phone" class="last-img" />
+              <h3 class="last__title">Будущее данных</h3>
+              <p class="last__description last__description_big">
+                Благодаря нескончаемым объемам данных и количеству инсайтов
+              </p>
+              <div class="last__author author">
+                <div class="author__avatar">
+                  <img
+                    src="img/avatar-4.jpg"
+                    alt="Tyler Murray"
+                    class="author__avatar-icon"
+                  />
+                </div>
+                <div class="author__info">
+                  <div class="author__link">
+                    <span class="author__name">Tyler Murray</span>
+                  </div>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">02 May</div>
+              </div>
+              <!-- /.author -->
+            </a>
+            <!-- /.last card -->
+            <a href="post.html" class="last all__card">
+              <img
+                src="img/all-card-5.jpg"
+                alt="artificial intelligence"
+                class="last-img"
+              />
+              <h3 class="last__title">Будущее обучения</h3>
+              <p class="last__description last__description_big">
+                Постоянная способность учиться будет на самых важных
+                <br class="visible" />навыках.
+              </p>
+              <div class="last__author author">
+                <div class="author__avatar">
+                  <img
+                    src="img/avatar-5.jpg"
+                    alt="Warren Casey"
+                    class="author__avatar-icon"
+                  />
+                </div>
+                <div class="author__info">
+                  <div class="author__link">
+                    <span class="author__name">Warren Casey</span>
+                  </div>
+                  <div class="author__verif">
+                    <img
+                      src="img/icon/ok.svg"
+                      alt="icon"
+                      class="author__verif-icon"
+                    />
+                    Verified writer
+                  </div>
+                </div>
+                <div class="author__date">02 May</div>
+              </div>
+              <!-- /.author -->
+            </a>
+            <!-- /.last card -->
+          </div>
+          <!-- ./all__wrapper-big -->
+        </div>
+        <a href="post.html" class="all__button-link button">
+          <span class="all__button-text">Больше постов</span>
+          <img src="img/icon/arrow.svg" alt="arrow" class="all__button-icon" />
+        </a>
+      </div>
+    </section>
+    <img src="img/wave-dark.svg" alt="decor" class="connect-img" />
+    <section class="connect connect--wrap">
+      <div class="container">
+        <div class="connect__wrapper">
+          <div class="connect__info">
+            <h2 class="connect__title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h2>
+            <form action="send.php" method="POST" class="connect__form">
+              <div class="connect__group">
+                <input
+                  type="email"
+                  class="connect__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <button class="connect__button" type="submit">Начать</button>
+            </form>
+            <p class="connect__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <!-- /. connect__info -->
+          <div class="connect__card-wrap">
+            <img
+              src="img/icon/cube-light.svg"
+              alt="cube-ligth"
+              class="cube-ligth"
+            />
+            <img
+              src="img/icon/cube-dark.svg"
+              alt="cube-dark"
+              class="cube-dark"
+            />
+            <div class="connect__card">
+              <img src="img/joistic.jpg" alt="joystick" class="connect__img" />
+              <h3 class="connect__card-title">Лучшие статьи каждую неделю</h3>
+              <p class="connect__card-text">
+                Наши предложения по страхованию везде&nbsp;одинаковы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <span class="line"></span>
+        <div class="footer__wrapper">
+          <div class="footer__info info footer__blocks">
+            <a href="index.html" class="footer__logo">
+              <img
+                src="img/logo.svg"
+                alt="logo: ehya"
+                class="footer__logo-icon"
+              />
+            </a>
+            <div class="info__description">
+              Создайте современный и<br class="hidden" />
+              креативный веб-сайт с crealand
+            </div>
+            <div class="info__description info__description_visible">
+              Создайте&nbsp;современный&nbsp;и&nbsp;креативный веб-сайт с
+              crealand
+            </div>
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.google.ru/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/google.svg" alt="icon: google"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://twitter.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/twitter.svg" alt="icon: twitter"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/instagram.svg" alt="icon: instagram"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.linkedin.cn/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/linkedin.svg" alt="icon: linkedin"
+                  /></a>
+                </li>
+                <li class="footer__item-social">
+                  <a
+                    href="https://www.youtube.com/"
+                    class="footer__social-link"
+                    target="_blank"
+                    rel="nofollow nopener"
+                    ><img src="img/icon/youtube.svg" alt="icon: youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__product footer__blocks">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Лендинг</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Функции</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Скидки</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Расценки</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__product -->
+          <div class="footer__service footer__blocks">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Дизайн</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Темы</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Иллюстрации</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >UI Kit</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__service -->
+          <div class="footer__compani footer__blocks">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >О нас</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Условия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__compani -->
+          <div class="footer__more footer__blocks">
+            <h3 class="footer__title">Более</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Документация</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Лицензия</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  target="_blank"
+                  rel="nofollow nopener"
+                  href="#"
+                  class="footer__link"
+                  >Измененния</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__compani -->
+        </div>
+        <div class="copirigth">
+          <div class="copirigth__heart">
+            <img src="img/icon/heart.svg" alt="heart" class="copirigth-icon" />
+          </div>
+          <div class="copirigth__text">
+            Copyright © 2019. Crafted with love.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#body" class="up scroll-link"></a>
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="dialog">
+        <form action="send.php" method="POST" class="modal__form">
+          <img src="img/icon/close.svg" alt="cross" class="cross" />
+          <h3 class="modal__title">Обратная связь</h3>
+          <div class="modal__group">
+            <input
+              type="text"
+              class="modal__input"
+              minlength="2"
+              placeholder="Ваше имя*"
+              required
+              name="name"
+            />
+          </div>
+          <div class="modal__group">
+            <input
+              type="tel"
+              class="modal__input modal__input_tel"
+              minlength="18"
+              placeholder="Номер телефона*"
+              required
+              name="phone"
+            />
+          </div>
+          <button type="submit" class="button modal__button">Получить</button>
+        </form>
+      </div>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

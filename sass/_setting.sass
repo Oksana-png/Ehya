@@ -1,17 +1,28 @@
 *
   box-sizing: border-box
 body
+  // width: 100vw
   font-family: 'Open Sans', sans-serif
+  overflow-x: hidden
 .container
   width: 1140px
   margin: auto
+  &-post
+    margin: auto
+    width: 804px
+    &__wrapper
+      width: calc(100% - 54px)
+      margin: auto
 button
   cursor: pointer
 button:active, button:focus
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
   outline: none
 input
   outline: none
-a
+a, a:focus
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  outline: none
   cursor: pointer
 
 .author
@@ -24,6 +35,10 @@ a
     width: 40px
     height: 40px
     border-radius: 50%
+    overflow: hidden
+    &-icon
+      width: 100%
+      height: 100%
   &__info
     margin-left: 0
     margin-right: auto
@@ -52,6 +67,8 @@ a
       margin-right: 8px
       width: 16px
       height: 16px
+  &__link
+    text-decoration: none
 .label
   padding: 8px 13px
   background: rgba(54, 179, 126, 0.1)
@@ -62,6 +79,7 @@ a
   color: #36B37E
   border-radius: 20px
   margin-bottom: 16px
+  text-decoration: none
 .button
   padding: 11px 22px
   background-color: transparent
@@ -72,3 +90,25 @@ a
   font-size: 16px
   line-height: 22px
   color: $ligth
+  text-decoration: none
+.body
+  &_active
+    overflow: hidden
+
+// ::-webkit-scrollbar
+//   width: 15px
+//   height: 3px
+// ::-webkit-scrollbar-button
+//   background-color: #666
+// ::-webkit-scrollbar-track
+//   background-color: #999
+// ::-webkit-scrollbar-track-piece
+//   background-color: #ffffff
+// ::-webkit-scrollbar-thumb
+//   height: 50px
+//   background-color: #666
+//   border-radius: 3px
+// ::-webkit-scrollbar-corner
+//   background-color: #999
+// ::-webkit-resizer
+//   background-color: #666
